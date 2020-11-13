@@ -13,13 +13,13 @@ exclude = [".github/*"]
 proc-macro = true
 
 [dependencies]
-eyre = "0.6"
-quote = "1.0"
-syn = "1.0"
-async-trait = "0.1"
-sqlx = { version = "0.3", default-features = false, features = ["runtime-tokio", "sqlite", "postgres"] }
+eyre = "0.6.3"
+quote = "1.0.7"
+syn = "1.0.48"
+async-trait = "0.1.41"
+sqlx = { version = "0.4.1", default-features = false, features = [ "sqlite", "postgres"] }
 
 [dev-dependencies]
-tokio = { version = "0.2", features= ["rt-threaded",  "macros"] }
-sqlx = { version = "0.3", default-features = false, features = ["runtime-tokio", "macros", "sqlite", "postgres"] }
+tokio = { version = "0.2", features = ["rt-threaded",  "macros"] }
+sqlx = { version = "0.4.1", default-features = false, features = ["runtime-tokio", "macros", "sqlite", "postgres"] }
 
